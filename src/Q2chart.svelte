@@ -1,14 +1,20 @@
 <script>
+  let chartHeight = 0.3
+  if (window.innerWidth < 700) {
+    chartHeight = 0.5
+  }
+
+  console.log(window.innerWidth)
+
   import { fly, fade, scale, slide } from 'svelte/transition'
   let formatThousands = new Intl.NumberFormat()
   let ygrid = [500, 1000, 1500]
   import { lby } from './loadshedding-by-year.js'
   import * as d3 from 'd3'
-  console.log('question 2 chart')
-  console.log(lby)
+
   let width = 300
-  let height = 300
-  $: height = width * 0.3
+  let height = 500
+  $: height = width * chartHeight
   $: xScale = d3
     .scaleBand()
     .domain(lby.map((d) => d.year))

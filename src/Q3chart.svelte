@@ -1,4 +1,8 @@
 <script>
+  let chartHeight = 0.3
+  if (window.innerWidth < 700) {
+    chartHeight = 0.5
+  }
   import { fly, fade, scale, slide } from 'svelte/transition'
   let formatThousands = new Intl.NumberFormat()
   let ygrid = [500, 1000, 1500]
@@ -7,7 +11,7 @@
 
   let width = 300
   let height = 300
-  $: height = width * 0.2
+  $: height = width * chartHeight
   $: xScale = d3
     .scaleBand()
     .domain(lbm.map((d) => d.month))
