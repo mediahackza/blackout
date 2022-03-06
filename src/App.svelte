@@ -23,7 +23,7 @@
         count++
       }
     })
-    console.log(count)
+    finalScore = count
   }
 
   let answered = [false, false, false, false, false]
