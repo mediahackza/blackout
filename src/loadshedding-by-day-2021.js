@@ -1,30 +1,30 @@
 export const lbd = [
   {
-    day: 'Monday',
+    day: 'Mon',
     count: 145,
   },
   {
-    day: 'Tuesday',
+    day: 'Tue',
     count: 141,
   },
   {
-    day: 'Wednesday',
+    day: 'Wed',
     count: 178,
   },
   {
-    day: 'Thursday',
+    day: 'Thu',
     count: 200,
   },
   {
-    day: 'Friday',
+    day: 'Fri',
     count: 174,
   },
   {
-    day: 'Saturday',
+    day: 'Sat',
     count: 151,
   },
   {
-    day: 'Sunday',
+    day: 'Sun',
     count: 163,
   },
 ]
