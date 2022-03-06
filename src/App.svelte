@@ -231,9 +231,34 @@
       </div>
     </div>
   {/if}
+  <div class="sharer">
+    Share this quiz with your friends! <a
+      href="https://twitter.com/intent/tweet?text=How%20well%20do%20you%20know%20loadshedding?%20Test%20your%20knowledge%20of%20the%20dark%20side%20with%20a%20quiz.%20https://blackout.theoutlier.co.za"
+      target="_blank"><img src="./twitter.svg" alt="Twitter Link" /></a
+    >
+    or
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://blackout.theoutlier.co.za"
+      target="_blank"><img src="./facebook.svg" alt="Facebook Link" /></a
+    ><br />
+    If you enjoyed this subscribe to our newsletter for more quizzes and data stories:
+    <a href="https://newsletter.theoutlier.co.za" target="_blank">Subscribe</a>
+  </div>
 </main>
 
 <style>
+  .sharer {
+    background: var(--background);
+    padding: 30px;
+    color: #fff;
+    padding-bottom: 50px;
+    font-size: 01rem;
+    text-align: center;
+  }
+  .sharer a {
+    color: #fff;
+    text-decoration: underline;
+  }
   .outlier-logo {
     width: 100%;
     text-align: center;
@@ -456,6 +481,7 @@
     }
     .scorecard {
       padding: 0px;
+      padding-top: 50px;
     }
   }
 </style>
