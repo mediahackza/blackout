@@ -481,7 +481,7 @@
     }
     .scorecard {
       padding: 0px;
-      padding-top: 20px;
+      padding-top: 10px;
     }
   }
 </style>
