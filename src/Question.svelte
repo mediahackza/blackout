@@ -187,6 +187,7 @@
     /* border: solid 1px red; */
     text-align: center;
   }
+
   .option-box {
     margin-left: auto;
     margin-right: auto;
@@ -209,6 +210,10 @@
   .option-box-answered {
     pointer-events: none;
   }
+  .option-answer {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   .answer {
     margin-top: 5px;
 
@@ -227,5 +232,11 @@
   }
   .answered {
     background: green;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .option-answer {
+      font-size: 0.9rem;
+    }
   }
 </style>
