@@ -4,8 +4,6 @@
     chartHeight = 0.5
   }
 
-  console.log(window.innerWidth)
-
   import { fly, fade, scale, slide } from 'svelte/transition'
   let formatThousands = new Intl.NumberFormat()
   let ygrid = [500, 1000, 1500]

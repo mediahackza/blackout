@@ -14,9 +14,9 @@ let qs = [
     selection: '',
     correct: false,
     incorrectResponse:
-      '<span class="answer-result">Incorrect</span><br/> The correct answer is 1,152 hours which is roughly equivalent to 48 days-worth of loadshedding',
+      '<span class="answer-result">Incorrect</span><br/> The correct answer is 1,152 hours which is roughly equivalent to 48 days-worth of loadshedding.',
     correctResponse:
-      '<span class="answer-result">Correct</span><br/> in 2021 there were 1,152 hours during which loadshedding was in effect, which is roughly equivalent to 48 days of loadsheddihng.',
+      '<span class="answer-result">Correct</span><br/> in 2021 there were 1,152 hours during which loadshedding was in effect, which is roughly equivalent to 48 days of loadshedding.',
   },
   {
     q: 2,
@@ -48,8 +48,9 @@ let qs = [
     selection: '',
     correct: false,
     incorrectResponse:
-      'Incorrect!<br/> The correct answer is August & September',
-    correctResponse: 'Correct!',
+      'Incorrect!<br/> The correct answer is August & September, the only months without loadshedding in 2021.',
+    correctResponse:
+      'Correct! The only two months without some loadshedding were August and September.',
   },
   {
     q: 4,

@@ -1,4 +1,5 @@
 <script>
+  import { fly, fade, scale, slide } from 'svelte/transition'
   let finalScore = 0
 
   let lightarray = 0
@@ -143,10 +144,15 @@
   </div>
 
   <div class="introduction">
-    Test your knowledge of the dark side with a quick quiz. Do you know how many
-    hours of blackouts South Africa had last year? Were there more blackouts on
-    Mondays, or over weekends? Get all the answers right to keep the bulbs
-    burning.
+    How well do you know the dark side? Do you know how many hours of blackouts
+    South Africa had last year? Were there more blackouts on Mondays, or over
+    weekends? Get all the answers right to keep the lights on.
+    <p>
+      Using data from <a href="https://sepush.co.za/" target="_blank"
+        >Eskom Se Push</a
+      > on loadshedding from 2015 to 2021, we've compiled a list of random facts
+      about loadshedding in South Africa. See how many you can answer correctly.
+    </p>
   </div>
   <div class="explanation">
     <!-- <div class="explain-title">Blackouts? Loadshedding?</div> -->
@@ -166,13 +172,10 @@
       </div>
     {/if}
   </div>
-  <div class="question-start">Test yourself</div>
-  <div class="explanation">
-    Using data from <a href="https://sepush.co.za/" target="_blank"
-      >Eskom Se Push</a
-    > on loadshedding from 2015 to 2021, we have compiled a list of random facts
-    about loadshedding in South Africa. See how many you can answer correctly.
-  </div>
+  <div class="question-start">Let's Go ...</div>
+  <!-- <div class="explanation">
+    
+  </div> -->
 
   <Question qnumber={0} />
   <Question qnumber={1} />
@@ -406,6 +409,9 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    background: var(--background);
+    color: #fff;
+    font-weight: 700;
   }
   .explanation-click:hover {
     background: rgb(212, 212, 212);
