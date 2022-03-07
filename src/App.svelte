@@ -446,9 +446,9 @@
     /* border-top: solid 1px #000; */
     color: #fff;
 
-    padding: 5px 10px;
+    padding: 5px 1%;
     z-index: 100;
-    width: 100%;
+    width: 98%;
   }
   .scorecard img {
     width: 30px;
